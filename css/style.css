@@ -1,0 +1,68 @@
+#game {
+	width: 400px;
+	/*margin: 0 auto;*/
+	background: rgba(0, 128, 0, 0.24);
+	display: none;
+	position: relative;
+	margin-top: 50px;
+}
+#reset {
+	display: none;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+}
+#game .win-overlay {
+	display: none;
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+.player-move {
+	display: none;
+}
+.player-move h5 {
+	text-transform: uppercase;
+}
+#game .win-overlay h1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -179px;
+	margin-top: -32px;
+}
+#game tbody tr td {
+	min-width: 100px;
+	height: 100px;
+	background: transparent;
+	border: 1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+#game tbody tr td.circle:after, #game tbody tr td.cross:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#game tbody tr td.cross:after {
+	background: #fff url("/img/cross-icon.png") no-repeat center center;
+	background-size: cover; 
+}
+#game tbody tr td.circle:after {
+	background: #fff url("/img/circle-icon.png") no-repeat center center;
+	background-size: cover;
+}
+#game tbody tr td.cross:hover, #game tbody tr td.circle:hover {
+	cursor: no-drop;
+}
+#game tbody tr td:hover {
+	background: rgba(0, 128, 0, 0.5);
+}

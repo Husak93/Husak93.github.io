@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="utf-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<h1 class="center-align">Tic Tac Toe</h1>
+<a class="waves-effect waves-light btn" id="reset">Reset Game</a>
+<div class="row">
+    <div class="col l12">
+<div class="input-field col l3 wow bounce" id="type-of-game" data-wow-delay=".25s">
+    <select>
+      <option value="" disabled selected>Choose type of player</option>
+      <option value="1">Computer</option>
+      <option value="2">Player 2</option>
+    </select>
+    <label>Select type of game</label>
+  </div>
+    </div>
+  <div class="col s12">
+  	<table id="game">
+        <div class="player-move"><h5>Start game player#1 from cross</h5></div>
+	<tbody>
+	</tbody>
+	</table>
+  </div>
+  </div>
+</body>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
